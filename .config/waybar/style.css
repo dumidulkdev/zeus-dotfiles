@@ -1,0 +1,145 @@
+@import "../omarchy/current/theme/waybar.css";
+
+* {
+  background-color: @background;
+  color: @foreground;
+
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: 'CaskaydiaMono Nerd Font';
+  font-size: 18px;
+}
+
+.modules-left {
+  margin-left: 8px;
+}
+
+.modules-right {
+  margin-right: 8px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#cpu,
+#battery,
+#pulseaudio,
+#custom-eq,
+#custom-media-prev,
+#custom-media-toggle,
+#custom-media-next,
+#custom-omarchy,
+#custom-screenrecording-indicator,
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#tray {
+  margin-right: 16px;
+}
+
+#bluetooth {
+  margin-right: 17px;
+}
+
+#custom-docker {
+  margin: 0 2px;
+  padding: 0 6px;
+  font-family: 'CaskaydiaMono Nerd Font';
+  font-size: 18px;
+}
+
+#network {
+  margin-right: 13px;
+}
+
+#custom-media-prev,
+#custom-media-toggle,
+#custom-media-next {
+  padding: 0;
+  margin: 0 3px;
+  font-size: 16px;
+}
+
+#custom-eq {
+  padding: 0;
+  margin: 0 7.5px 0 12px;
+  font-size: 18px;
+}
+
+#custom-weather {
+  margin: 0 2px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-family: 'CaskaydiaMono Nerd Font';
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+#custom-expand-icon {
+  margin-right: 18px;
+}
+
+tooltip {
+  padding: 2px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  margin-left: 5px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-left: 5px;
+  font-size: 10px;
+  padding-bottom: 1px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}
+
+#custom-cava {
+  margin: 0 8px;
+  font-size: 12px;
+  letter-spacing: 0;
+  color: #c7d2fe;
+}
+
+#custom-temp {
+  margin: 0 8px 0 2px;
+  font-size: 15px;
+}
+
+#custom-git {
+  margin: 0 10px 0 4px;
+  font-size: 17px;
+  color: #c4b5fd;
+}
