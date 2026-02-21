@@ -31,6 +31,7 @@
 }
 
 #cpu,
+#memory,
 #battery,
 #pulseaudio,
 #custom-eq,
@@ -142,4 +143,23 @@ tooltip {
   margin: 0 10px 0 4px;
   font-size: 17px;
   color: #c4b5fd;
+}
+
+#custom-vpn {
+  margin: 0 8px;
+  font-size: 16px;
+  padding: 0;
+}
+
+#custom-vpn.on {
+  color: #22c55e;
+}
+
+#custom-vpn.off {
+  color: #ef4444;
+}
+
+#memory {
+  font-size: 14px;
+  margin: 0 8px;
 }
