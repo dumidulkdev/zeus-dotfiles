@@ -10,13 +10,9 @@ Personal Arch/Omarchy dotfiles (public-safe subset).
 
 No OpenClaw configs, tokens, secrets, or personal account files are included.
 
-## Screenshots
+## Screenshot
 
-### Waybar
-![Waybar](./screenshots/waybar.jpg)
-
-### Neovim
-![Neovim](./screenshots/nvim.jpg)
+![Setup](./screenshots/setup.jpg)
 
 ## Install
 
