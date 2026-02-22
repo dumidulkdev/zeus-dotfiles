@@ -11,6 +11,7 @@
     "bluetooth",
     "network",
     "custom/vpn",
+    "custom/eye",
     "pulseaudio",
     "custom/eq",
     "custom/media-prev",
@@ -75,11 +76,27 @@
     "escape": false,
     "tooltip": true
   },
+  "custom/project": {
+    "exec": "/home/zeus/.config/waybar/scripts/project-waybar.sh status",
+    "return-type": "json",
+    "interval": 5,
+    "on-click": "/home/zeus/.config/waybar/scripts/project-waybar.sh click",
+    "tooltip": true
+  },
   "custom/vpn": {
     "exec": "/home/zeus/.config/waybar/scripts/campus-vpn.sh status",
     "return-type": "json",
     "interval": 2,
     "on-click": "/home/zeus/.config/waybar/scripts/campus-vpn.sh toggle",
+    "tooltip": true
+  },
+  "custom/eye": {
+    "exec": "/home/zeus/.config/waybar/scripts/eye-comfort.sh status",
+    "return-type": "json",
+    "interval": 3,
+    "on-click": "/home/zeus/.config/waybar/scripts/eye-comfort.sh toggle",
+    "on-scroll-up": "/home/zeus/.config/waybar/scripts/eye-comfort.sh warmer",
+    "on-scroll-down": "/home/zeus/.config/waybar/scripts/eye-comfort.sh cooler",
     "tooltip": true
   },
   "custom/update": {

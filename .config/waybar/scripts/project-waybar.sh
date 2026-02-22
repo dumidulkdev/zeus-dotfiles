@@ -29,7 +29,7 @@ status_json() {
 }
 
 open_nvim() {
-  alacritty -e bash -lc "cd \"$project\" && nvim ."
+  ghostty -e bash -lc "cd \"$project\" && nvim ."
 }
 
 case "${1:-status}" in

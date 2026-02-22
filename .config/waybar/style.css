@@ -145,6 +145,12 @@ tooltip {
   color: #c4b5fd;
 }
 
+#custom-project {
+  margin: 0 8px 0 2px;
+  font-size: 15px;
+  color: #cbd5e1;
+}
+
 #custom-vpn {
   margin: 0 8px;
   font-size: 16px;
@@ -157,6 +163,19 @@ tooltip {
 
 #custom-vpn.off {
   color: #ef4444;
+}
+
+#custom-eye {
+  margin: 0 8px;
+  font-size: 15px;
+}
+
+#custom-eye.on {
+  color: #f59e0b;
+}
+
+#custom-eye.off {
+  color: #94a3b8;
 }
 
 #memory {

@@ -31,7 +31,18 @@ end, opts)
 
 -- File finder (VSCode Ctrl+P equivalent)
 map("n", "<C-p>", function()
-  Snacks.picker.files()
+  -- VSCode-like quick open: show all files, but boost recent/frequent ones
+  Snacks.picker.files({
+    hidden = true,
+    ignored = true,
+    exclude = { "**/node_modules/**", "**/dist/**", "**/.git/**" },
+    matcher = {
+      frecency = true,
+      history_bonus = true,
+      sort_empty = true,
+      cwd_bonus = true,
+    },
+  })
 end, opts)
 
 -- VSCode-like terminal toggle (Ctrl+J)

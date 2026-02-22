@@ -8,7 +8,7 @@ return {
       -- Common language servers
       opts.servers.vtsls = opts.servers.vtsls or {}
       opts.servers.ts_ls = opts.servers.ts_ls or {}
-      opts.servers.eslint = opts.servers.eslint or {}
+      opts.servers.eslint = false
       opts.servers.lua_ls = opts.servers.lua_ls or {}
       opts.servers.bashls = opts.servers.bashls or {}
       opts.servers.jsonls = opts.servers.jsonls or {}
@@ -28,7 +28,6 @@ return {
       local wanted = {
         "vtsls",
         "ts_ls",
-        "eslint",
         "lua_ls",
         "bashls",
         "jsonls",
